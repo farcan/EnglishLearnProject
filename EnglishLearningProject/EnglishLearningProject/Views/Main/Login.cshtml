@@ -1,0 +1,42 @@
+﻿@using EnglishLearningProject.ViewModels
+@model UserLoginViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@section Scripts{
+    @await Html.PartialAsync("_ValidationScriptsPartial.cshtml")
+}
+
+
+
+<h1>Üye Giriş Sayfası</h1>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-info"> Üye Giriş İşlemi Başarılı </div>
+}
+
+<div asp-validation-summary="ModelOnly" class="alert-danger"></div>
+
+<form asp-controller="Main" asp-action="Login" method="post">
+
+
+
+
+    <div class="mb-3">
+        <label for="Email" class="form-label" asp-for="UserName"></label>
+        <input type="text" class="form-control" asp-for="UserName" placeholder="Kullanıcı Adı Giriniz">
+        <span class="text-danger" asp-validation-for="UserName"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="Email" class="form-label" asp-for="Password"></label>
+        <input type="password" class="form-control"  asp-for="Password" placeholder="Şifre Giriniz">
+        <span class="text-danger" asp-validation-for="Password"></span>
+    </div>
+
+
+
+</form>

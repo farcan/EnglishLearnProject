@@ -1,0 +1,60 @@
+﻿@using EnglishLearningProject.ViewModels
+@model UserRegisterViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@section Scripts{
+    @await Html.PartialAsync("_ValidationScriptsPartial.cshtml")
+}
+
+
+<h1> Üye Kayıt Sayfası </h1>
+
+
+@if (TempData["SuccessMessage"] != null)
+{
+     <div class="alert-success" role="alert">
+         Üye Olma İşlemi Başarılı
+     </div>    
+}
+
+<div class=" alert alert-danger" asp-validation-summary="ModelOnly" >
+
+</div>
+
+<form asp-controller="Main" asp-action="Register" method="post">
+
+    <div class="mb-3">
+        <label class="form-label" asp-for="name"></label>
+        <input type="text" class="form-control" asp-for="name" placeholder="İsim" />
+        <span class="text-danger" asp-validation-for="name"></span>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" asp-for="surname"></label>
+        <input type="text" class="form-control" asp-for="surname" placeholder="Soyisim" />
+        <span class="text-danger" asp-validation-for="surname"></span>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" asp-for="userName"></label>
+        <input type="text" class="form-control" asp-for="userName" placeholder="Kullanıcı Adı" />
+        <span class="text-danger" asp-validation-for="userName"></span>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" asp-for="email"></label>
+        <input type="text" class="form-control" asp-for="email" placeholder="Email" />
+        <span class="text-danger" asp-validation-for="email"></span>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" asp-for="password"></label>
+        <input type="text" class="form-control" asp-for="password" placeholder="Şifre" />
+        <span class="text-danger" asp-validation-for="password"></span>
+    </div>
+
+    <button class="btn btn-outline-light">Üye Ol</button>
+</form>
