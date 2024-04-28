@@ -1,0 +1,271 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|c:\\users\\husnu\\source\\repos\\englishlearnproject\\englishlearningproject\\englishlearningproject\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|solutionrelative:englishlearningproject\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|c:\\users\\husnu\\source\\repos\\englishlearnproject\\englishlearningproject\\englishlearningproject\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|solutionrelative:englishlearningproject\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|c:\\users\\husnu\\source\\repos\\englishlearnproject\\englishlearningproject\\englishlearningproject\\models\\approle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|solutionrelative:englishlearningproject\\models\\approle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|c:\\users\\husnu\\source\\repos\\englishlearnproject\\englishlearningproject\\englishlearningproject\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|solutionrelative:englishlearningproject\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|c:\\users\\husnu\\source\\repos\\englishlearnproject\\englishlearningproject\\englishlearningproject\\models\\worduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|solutionrelative:englishlearningproject\\models\\worduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|c:\\users\\husnu\\source\\repos\\englishlearnproject\\englishlearningproject\\englishlearningproject\\models\\word.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|solutionrelative:englishlearningproject\\models\\word.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|c:\\users\\husnu\\source\\repos\\englishlearnproject\\englishlearningproject\\englishlearningproject\\views\\main\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|solutionrelative:englishlearningproject\\views\\main\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|c:\\users\\husnu\\source\\repos\\englishlearnproject\\englishlearningproject\\englishlearningproject\\controllers\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|solutionrelative:englishlearningproject\\controllers\\maincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|c:\\users\\husnu\\source\\repos\\englishlearnproject\\englishlearningproject\\englishlearningproject\\viewmodels\\userloginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|solutionrelative:englishlearningproject\\viewmodels\\userloginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|c:\\users\\husnu\\source\\repos\\englishlearnproject\\englishlearningproject\\englishlearningproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|solutionrelative:englishlearningproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|c:\\users\\husnu\\source\\repos\\englishlearnproject\\englishlearningproject\\englishlearningproject\\extensions\\modelstateerrorextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|solutionrelative:englishlearningproject\\extensions\\modelstateerrorextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|c:\\users\\husnu\\source\\repos\\englishlearnproject\\englishlearningproject\\englishlearningproject\\views\\main\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|solutionrelative:englishlearningproject\\views\\main\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|c:\\users\\husnu\\source\\repos\\englishlearnproject\\englishlearningproject\\englishlearningproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|solutionrelative:englishlearningproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|c:\\users\\husnu\\source\\repos\\englishlearnproject\\englishlearningproject\\englishlearningproject\\extensions\\startupextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|solutionrelative:englishlearningproject\\extensions\\startupextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|c:\\users\\husnu\\source\\repos\\englishlearnproject\\englishlearningproject\\englishlearningproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|solutionrelative:englishlearningproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Question.cs",
+              "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Models\\Question.cs",
+              "RelativeDocumentMoniker": "EnglishLearningProject\\Models\\Question.cs",
+              "ToolTip": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Models\\Question.cs",
+              "RelativeToolTip": "EnglishLearningProject\\Models\\Question.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T10:01:27.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WordUser.cs",
+              "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Models\\WordUser.cs",
+              "RelativeDocumentMoniker": "EnglishLearningProject\\Models\\WordUser.cs",
+              "ToolTip": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Models\\WordUser.cs",
+              "RelativeToolTip": "EnglishLearningProject\\Models\\WordUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T09:56:13.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Word.cs",
+              "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Models\\Word.cs",
+              "RelativeDocumentMoniker": "EnglishLearningProject\\Models\\Word.cs",
+              "ToolTip": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Models\\Word.cs",
+              "RelativeToolTip": "EnglishLearningProject\\Models\\Word.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T09:56:13.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "EnglishLearningProject\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "EnglishLearningProject\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T09:56:13.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Views\\Main\\Login.cshtml",
+              "RelativeDocumentMoniker": "EnglishLearningProject\\Views\\Main\\Login.cshtml",
+              "ToolTip": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Views\\Main\\Login.cshtml",
+              "RelativeToolTip": "EnglishLearningProject\\Views\\Main\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-28T09:56:13.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainController.cs",
+              "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Controllers\\MainController.cs",
+              "RelativeDocumentMoniker": "EnglishLearningProject\\Controllers\\MainController.cs",
+              "ToolTip": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Controllers\\MainController.cs",
+              "RelativeToolTip": "EnglishLearningProject\\Controllers\\MainController.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAqwHMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T09:56:13.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "EnglishLearningProject\\Models\\AppUser.cs",
+              "ToolTip": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Models\\AppUser.cs",
+              "RelativeToolTip": "EnglishLearningProject\\Models\\AppUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T09:56:13.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Models\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "EnglishLearningProject\\Models\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Models\\AppDbContext.cs",
+              "RelativeToolTip": "EnglishLearningProject\\Models\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T09:56:13.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppRole.cs",
+              "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Models\\AppRole.cs",
+              "RelativeDocumentMoniker": "EnglishLearningProject\\Models\\AppRole.cs",
+              "ToolTip": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Models\\AppRole.cs",
+              "RelativeToolTip": "EnglishLearningProject\\Models\\AppRole.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T09:56:13.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserLoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\ViewModels\\UserLoginViewModel.cs",
+              "RelativeDocumentMoniker": "EnglishLearningProject\\ViewModels\\UserLoginViewModel.cs",
+              "ToolTip": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\ViewModels\\UserLoginViewModel.cs",
+              "RelativeToolTip": "EnglishLearningProject\\ViewModels\\UserLoginViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T09:56:13.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ModelStateErrorExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Extensions\\ModelStateErrorExtensions.cs",
+              "RelativeDocumentMoniker": "EnglishLearningProject\\Extensions\\ModelStateErrorExtensions.cs",
+              "ToolTip": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Extensions\\ModelStateErrorExtensions.cs",
+              "RelativeToolTip": "EnglishLearningProject\\Extensions\\ModelStateErrorExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T09:56:13.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Views\\Main\\Register.cshtml",
+              "RelativeDocumentMoniker": "EnglishLearningProject\\Views\\Main\\Register.cshtml",
+              "ToolTip": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Views\\Main\\Register.cshtml",
+              "RelativeToolTip": "EnglishLearningProject\\Views\\Main\\Register.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-28T09:56:13.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Program.cs",
+              "RelativeDocumentMoniker": "EnglishLearningProject\\Program.cs",
+              "ToolTip": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Program.cs",
+              "RelativeToolTip": "EnglishLearningProject\\Program.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T09:56:13.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "StartUpExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Extensions\\StartUpExtensions.cs",
+              "RelativeDocumentMoniker": "EnglishLearningProject\\Extensions\\StartUpExtensions.cs",
+              "ToolTip": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Extensions\\StartUpExtensions.cs",
+              "RelativeToolTip": "EnglishLearningProject\\Extensions\\StartUpExtensions.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwB0AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T09:56:13.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\appsettings.json",
+              "RelativeDocumentMoniker": "EnglishLearningProject\\appsettings.json",
+              "ToolTip": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\appsettings.json",
+              "RelativeToolTip": "EnglishLearningProject\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-28T09:56:13.268Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
