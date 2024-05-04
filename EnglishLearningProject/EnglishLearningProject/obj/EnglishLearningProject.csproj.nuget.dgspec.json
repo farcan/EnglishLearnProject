@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\husnu\\Source\\Repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\EnglishLearningProject.csproj": {}
+    "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\EnglishLearningProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\husnu\\Source\\Repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\EnglishLearningProject.csproj": {
+    "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\EnglishLearningProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\husnu\\Source\\Repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\EnglishLearningProject.csproj",
+        "projectUniqueName": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\EnglishLearningProject.csproj",
         "projectName": "EnglishLearningProject",
-        "projectPath": "C:\\Users\\husnu\\Source\\Repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\EnglishLearningProject.csproj",
-        "packagesPath": "C:\\Users\\husnu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\husnu\\Source\\Repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\obj\\",
+        "projectPath": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\EnglishLearningProject.csproj",
+        "packagesPath": "C:\\Users\\fahri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\husnu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fahri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,11 +39,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -89,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
