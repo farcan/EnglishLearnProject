@@ -12,6 +12,14 @@ namespace EnglishLearningProject.Controllers
             return View();
         }
 
+
+        [HttpGet]
+        public IActionResult AddWord()
+        {
+            return View();
+        }
+
+        [HttpPost]
         public IActionResult AddWord()
         {
             return View();
