@@ -11,6 +11,9 @@ namespace EnglishLearningProject.Models
             
         }
 
+        public DbSet<Word> Word { get; set; }
+        public DbSet<Quiz> Quiz { get; set; }
+            
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

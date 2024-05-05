@@ -21,10 +21,6 @@
 <div asp-validation-summary="ModelOnly" class="alert-danger"></div>
 
 <form asp-controller="Main" asp-action="Login" method="post">
-
-
-
-
     <div class="mb-3">
         <label for="Email" class="form-label" asp-for="UserName"></label>
         <input type="text" class="form-control" asp-for="UserName" placeholder="Kullanıcı Adı Giriniz">
@@ -36,7 +32,4 @@
         <input type="password" class="form-control"  asp-for="Password" placeholder="Şifre Giriniz">
         <span class="text-danger" asp-validation-for="Password"></span>
     </div>
-
-
-
 </form>

@@ -45,9 +45,9 @@ namespace EnglishLearningProject.Controllers
                 var user = new AppUser
                 {
                     Name = request.name,
-                    Surname = request.name,
+                    Surname = request.surname,
                     Email = request.email,
-                    UserName = request.name
+                    UserName = request.userName
                 };
 
                 var identityResult = await userManager.CreateAsync(user, request.password!);
