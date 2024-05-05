@@ -6,7 +6,18 @@
 *@
 @{
 }
+@section Scripts{
+    @await Html.PartialAsync("_ValidationScriptsPartial.cshtml")
+}
 
+<h1>Add Word Pages</h1>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-info"> Kelime Ekleme İşlemi Başarılı.</div>
+}
+
+<div asp-validation-summary="ModelOnly" class="alert-danger"></div>
 
 <form asp-controller="Member" asp-action="AddWord" method="post">
 

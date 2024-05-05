@@ -1,0 +1,33 @@
+﻿@model List<Word>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<table class="table table-striped table-dark">
+    <thead>
+        <tr>
+            <th scope="col">WordID</th>
+            <th scope="col">WordTR</th>
+            <th scope="col">WordEN</th>
+            <th scope="col">WordSentences</th>
+            <th scope="col">Update</th>
+            <th scope="col">Remove</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@item.WordID</th>
+                <td>@item.wordTR</td>
+                <td>@item.wordEN</td>
+                <td>@item.wordSentences</td>
+                <td><a class="btn btn-info">Güncelle</a></td>
+                <td><a class="btn btn-danger">Sil</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,52 @@
+﻿@using EnglishLearningProject.ViewModels
+@model UpdateWordViewModel
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial.cshtml")
+}
+
+<h1>Add Word Pages</h1>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-info"> Kelime Ekleme İşlemi Başarılı.</div>
+}
+
+<div asp-validation-summary="ModelOnly" class="alert-danger"></div>
+
+<form asp-controller="Member" asp-action="UpdateWord" method="post">
+
+  
+    <input type="hidden" class="form-control" asp-for="WordID" placeholder="" value="@Model.WordID">
+
+    <input type="hidden" class="form-control" asp-for="UserID" placeholder="" value="@Model.UserID">
+
+ 
+
+    <div class="mb-3">
+        <label class="form-label" asp-for="WordEN"></label>
+        <input type="text" class="form-control" asp-for="WordEN" placeholder="İngilizce Kelime Giriniz" value="@Model.WordEN">
+        <span class="text-danger" asp-validation-for="WordEN"></span>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" asp-for="WordTR"></label>
+        <input type="text" class="form-control" asp-for="WordTR" placeholder="Türkçe Kelime Giriniz" value="@Model.WordTR">
+        <span class="text-danger" asp-validation-for="WordTR"></span>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" asp-for="WordSentences"></label>
+        <input type="text" class="form-control" asp-for="WordSentences" placeholder="İngilizce Cümle Giriniz" value="@Model.WordSentences">
+        <span class="text-danger" asp-validation-for="WordSentences"></span>
+    </div>
+
+    
+
+    <button class="btn btn-light">Kelime Güncelle</button>
+</form>
