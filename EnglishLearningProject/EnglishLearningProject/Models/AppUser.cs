@@ -9,7 +9,6 @@ namespace EnglishLearningProject.Models
         public int Age { get; set; }
         public int quizQuestionCount { get; set; }
         public ICollection<Word>? Words { get; set; }
-
         public ICollection<Quiz>? quizzes { get; set; }
     }
 }

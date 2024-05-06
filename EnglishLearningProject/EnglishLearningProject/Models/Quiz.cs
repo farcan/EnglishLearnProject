@@ -3,8 +3,8 @@
     public class Quiz
     {
         public int quizID { get; set; }
-        public int counter { get; set; }
-        public int level { get; set; }
+        public int counter { get; set; } = 0;
+        public int level { get; set; } = 0;
         public DateTime? replyDate { get; set; }
 
         public string? UserID { get; set; }
