@@ -5,6 +5,13 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
+using System.ComponentModel;
+using System.Reflection.Metadata.Ecma335;
+using System.Security.Cryptography;
+using System.Text.Json.Serialization;
+
 
 namespace EnglishLearningProject.Controllers
 {
@@ -51,7 +58,7 @@ namespace EnglishLearningProject.Controllers
             AppUser user = await userManager.FindByNameAsync(User.Identity.Name);
             var words = await appDbContext.Word.ToListAsync();
             var filteredWords = words.Where(x => x.UserID == user.Id).ToList();
-            var test = CreateRandomWord(3);
+            await CreateQuiz();
             return View(filteredWords);
         }
 
@@ -91,9 +98,8 @@ namespace EnglishLearningProject.Controllers
         public async Task<List<Word>> CreateRandomWord(int wordCount)
         {
             List<Word> words = new List<Word>();
-
             var user = userManager.FindByNameAsync(User.Identity.Name);
-            var dbContextWords =  appDbContext.Word.Where(x => x.UserID == user.Result.Id).ToList(); // UserID kısıtlaması yapılmış veriler.
+            var dbContextWords =  appDbContext.Word.Where(x => x.UserID == user.Result.Id && x.isLearned==false).ToList(); // UserID kısıtlaması yapılmış veriler.
             int dbContextWordsRange = dbContextWords.Count();          
             /*
              Random sayı ürettir 0 ile dbContextWordsRange arasında
@@ -124,15 +130,145 @@ namespace EnglishLearningProject.Controllers
         }
         
 
-        public void CreateQuiz()
+        public async Task CreateQuiz()
+        {
+            //Kaç Kelime Eklenecek ve Kelimelerin Seviyelerine göre kelime ekleme işlemi yazılacak.
+            // 0 level kelime sayısı eğer kullanıcının çözmek istediği kelime sayısından az ise yeni kelimeler eklenecek.
+
+            //TestLog ile Quiz arasındaki ilişki 1-1 olabilir. ona ilerleyen süreçlerde karar ver.
+
+            AppUser user = await userManager.FindByNameAsync(User.Identity.Name);
+            var count = appDbContext.Word.Where(x=>x.UserID==user.Id && x.isLearned==false).ToList().Count();
+            List<Word> quizWords = new List<Word>();
+            quizWords = await CreateRandomWord(3);
+
+            foreach (var item in quizWords)
+            {
+                var quiz = new Quiz
+                {
+                    UserID = user.Id,
+                    WordID = item.WordID
+                };
+                appDbContext.Quiz.Add(quiz);
+            }
+            appDbContext.SaveChanges();
+
+        }
+
+        //Leveli sıfır olmayan quizleride çekecek.
+        public async Task<List<Word>> randomFalseAnswer(Word trueWord, List<Quiz> quizList)
         {
 
-         
-           
+            quizList = quizList.ToList();
+            List<Word> wordList = new List<Word>();
+            foreach (var item in quizList)
+            {
+                var tmpword = appDbContext.Word.FirstOrDefault(x=>x.WordID == item.WordID); 
+                wordList.Add(tmpword);
+            }
+
+            Random rnd = new Random();
+            List<Word> falseWords = new List<Word>();
+            wordList.Remove(trueWord);
+
+            for (int i = 0; i < 3; i++)
+            {
+                int randomIndex = rnd.Next(0, wordList.Count);
+                falseWords.Add(wordList[randomIndex]);
+                wordList.Remove(wordList[randomIndex]);
+            }
+
+            return falseWords;
+
+        }
+
+        
+        public async Task<IActionResult> SolveQuestion()
+        {
+
+
+            var quizListJSON = TempData["QuizList"] as string;
+            var quizList = JsonConvert.DeserializeObject<List<Quiz>>(quizListJSON);
+
+
+            var TestList = new List<TestLog>();
+
+            foreach (var item in quizList)
+            {
+                var trueWordEN = appDbContext.Word.FirstOrDefault(x => x.WordID == item.WordID).wordEN;
+                var trueWordTR = appDbContext.Word.FirstOrDefault(x => x.WordID == item.WordID).wordTR;
+                var trueWordSentences = appDbContext.Word.FirstOrDefault(x => x.WordID == item.WordID).wordEN;
+
+                var wrd = appDbContext.Word.FirstOrDefault(x => x.WordID == item.WordID);
+                var falseWords = await randomFalseAnswer(wrd, quizList);
+                var test = new TestLog
+                {
+                    QuizID = item.quizID,
+                    trueWord = trueWordEN,
+                    TrueWordTR = trueWordTR,
+                    trueSentences = trueWordSentences,
+                    falseWord1 = falseWords[0].wordTR,
+                    falseWord2 = falseWords[1].wordTR,
+                    falseWord3 = falseWords[2].wordTR
+                };
+                TestList.Add(test);
+            }         
+            return View(TestList);
         }
 
 
+        [HttpPost]
+        public IActionResult SaveTestLog( [FromBody] TestLog data)
+         {
+          /* TestLog data = JsonConvert.DeserializeObject<TestLog>(request);
+            appDbContext.TestLog.Add(data);
 
+
+
+
+
+
+         //   appDbContext.SaveChanges();*/
+            return Ok();
+        }
+
+
+        public async Task<IActionResult> StartTest()
+        {
+
+            //Quiz Var mı yok Mu diye kontrol etmeli ve daha sonra quiz yoksa eğer oluşturmalı
+            var user = await userManager.FindByNameAsync(User.Identity.Name);
+
+            var quizList = appDbContext.Quiz.Where(w => w.UserID == user.Id).ToList();
+
+            //Eğer Hiç Testi Yoksa
+            if (quizList.Count==0)
+            {
+              await CreateQuiz();
+            }
+            //Eğer test leveli sıfır olanların sayısı user QuestionCounttan az ise yeni oluşturacak. ve ekleyecek
+            if (quizList.Where(x=>x.level==0).ToList().Count<user.quizQuestionCount)
+            {
+
+            }
+
+            //Test'e giriş.
+            if (quizList.Count > 1)
+            {
+
+                string quizListJSON =  JsonConvert.SerializeObject(quizList);
+                TempData["QuizList"] = quizListJSON;
+                return RedirectToAction("SolveQuestion");
+            }
+
+            return View();
+            
+        }
+
+
+        
+
+        
 
 
 

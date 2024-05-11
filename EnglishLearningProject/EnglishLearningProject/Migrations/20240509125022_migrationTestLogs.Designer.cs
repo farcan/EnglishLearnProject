@@ -4,6 +4,7 @@ using EnglishLearningProject.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EnglishLearningProject.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240509125022_migrationTestLogs")]
+    partial class migrationTestLogs
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -169,14 +172,6 @@ namespace EnglishLearningProject.Migrations
                     b.Property<int>("QuizID")
                         .HasColumnType("int");
 
-                    b.Property<string>("SelectedAnswer")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TrueWordTR")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("falseWord1")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -194,10 +189,6 @@ namespace EnglishLearningProject.Migrations
 
                     b.Property<bool>("testResult")
                         .HasColumnType("bit");
-
-                    b.Property<string>("trueSentences")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("trueWord")
                         .IsRequired()

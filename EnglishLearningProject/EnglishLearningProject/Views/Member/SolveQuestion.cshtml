@@ -1,0 +1,55 @@
+﻿@model List<TestLog>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
+@foreach (var item in Model)
+{
+    <div class="test-card">
+
+        <div class="question">
+            <div class="question-word"><p>@item.trueWord</p></div>
+            <div class="question-sentences"><p>@item.trueSentences</p></div>
+        </div>
+
+
+        <div class="answers">
+
+                
+            <button class="btn btn-outline-danger btn-answer" data-item='@Json.Serialize(item)'> @item.TrueWordTR </button>
+            <button class="btn btn-outline-danger btn-answer" data-item='@Json.Serialize(item)'> @item.falseWord2 </button>
+            <button class="btn btn-outline-danger btn-answer" data-item='@Json.Serialize(item)'> @item.falseWord1 </button>
+            <button class="btn btn-outline-danger btn-answer" data-item='@Json.Serialize(item)'> @item.falseWord3 </button>
+        </div>
+    </div>  
+}
+
+
+<script>
+    $(document).ready(function () {
+        $(".btn-answer").click(function () {
+            var item = $(this).data('item');
+            console.log(item);
+            console.log(JSON.stringify(item));
+            
+            $.ajax({
+                url: '/Member/SaveTestLog', // Post edilecek URL'yi buraya girin
+                type: 'POST',
+                contentType : 'application/json',
+                data: JSON.stringify(item),
+                success: function (response) {
+                    console.log("Başarıyla post edildi!");
+                },
+                error: function (xhr, status, error) {
+                    console.error("Post edilirken bir hata oluştu: " + error);
+                }
+            });
+        });
+    });
+</script>
+ 

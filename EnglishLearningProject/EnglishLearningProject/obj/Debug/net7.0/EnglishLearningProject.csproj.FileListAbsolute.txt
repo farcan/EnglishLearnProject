@@ -80,3 +80,4 @@ C:\Users\fahri\OneDrive\Masaüstü\EnglishProject\EnglishLearnProject\EnglishLea
 C:\Users\fahri\OneDrive\Masaüstü\EnglishProject\EnglishLearnProject\EnglishLearningProject\EnglishLearningProject\obj\Debug\net7.0\EnglishLearningProject.pdb
 C:\Users\fahri\OneDrive\Masaüstü\EnglishProject\EnglishLearnProject\EnglishLearningProject\EnglishLearningProject\obj\Debug\net7.0\EnglishLearningProject.genruntimeconfig.cache
 C:\Users\fahri\OneDrive\Masaüstü\EnglishProject\EnglishLearnProject\EnglishLearningProject\EnglishLearningProject\obj\Debug\net7.0\ref\EnglishLearningProject.dll
+C:\Users\fahri\OneDrive\Masaüstü\EnglishProject\EnglishLearnProject\EnglishLearningProject\EnglishLearningProject\bin\Debug\net7.0\Newtonsoft.Json.dll
