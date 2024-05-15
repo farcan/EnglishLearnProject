@@ -3,11 +3,12 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    Layout = "_UserLayout";
 }
 
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
-
+@*
 @foreach (var item in Model)
 {
     <div class="test-card">
@@ -18,9 +19,7 @@
         </div>
 
 
-        <div class="answers">
-
-                
+        <div class="answers">   
             <button class="btn btn-outline-danger btn-answer" data-item='@Json.Serialize(item)'> @item.TrueWordTR </button>
             <button class="btn btn-outline-danger btn-answer" data-item='@Json.Serialize(item)'> @item.falseWord2 </button>
             <button class="btn btn-outline-danger btn-answer" data-item='@Json.Serialize(item)'> @item.falseWord1 </button>
@@ -28,13 +27,84 @@
         </div>
     </div>  
 }
+*@
+
+@foreach (var item in Model)
+{
+    
+
+    <div class="card border-3 test-card" style="display:flex; flex-direction:column; justify-content:center; align-items:center; background-color:rgba(199, 54, 89,0.4); padding:10px">
+    <img class="card-img-top" src="https://www.motionpictures.org/wp-content/uploads/2017/04/Cars358dd6f1c65330-1024x586.jpg" style="width:450px;" alt="Card image cap">
+    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+        <h5 class="card-title text-white">@item.trueWord</h5>
+        <p class="card-text text-white-50">@item.trueSentences</p>
+        <div class="answers d-flex">
+            <button class="btn btn-outline-light btn-answer" data-item='@Json.Serialize(item)'> @item.TrueWordTR </button>
+            <button class="btn btn-outline-light btn-answer" data-item='@Json.Serialize(item)'> @item.falseWord2 </button>
+            <button class="btn btn-outline-light btn-answer" data-item='@Json.Serialize(item)'> @item.falseWord1 </button>
+            <button class="btn btn-outline-light btn-answer" data-item='@Json.Serialize(item)'> @item.falseWord3 </button>
+        </div>
+
+    </div>
+</div>
+}
 
 
 <script>
     $(document).ready(function () {
+        var currentQuestionIndex = 0;
+        var questions = $(".test-card");
+
+        // İlk soruyu göster
+        showQuestion(currentQuestionIndex);
+
+        // Buton tıklanınca sonraki soruyu göster
         $(".btn-answer").click(function () {
             var item = $(this).data('item');
-            console.log(item);
+            item.SelectedAnswer = $(this).text();
+            console.log(JSON.stringify(item));
+
+            // AJAX isteğini gönder
+            $.ajax({
+                url: '/Member/SaveTestLog',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(item),
+                success: function (response) {
+                    console.log("Başarıyla post edildi!");
+
+                    // Sonraki soruya geç
+                    currentQuestionIndex++;
+                    if (currentQuestionIndex < questions.length) {
+                        showQuestion(currentQuestionIndex);
+                    } else {
+                        console.log("Sorular bitti!");
+                        // Burada yapılacak başka bir şey varsa ekleyebilirsiniz.
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error("Post edilirken bir hata oluştu: " + error);
+                }
+            });
+        });
+
+        // Belirli bir soruyu göstermek için fonksiyon
+        function showQuestion(index) {
+            questions.hide();
+            $(questions[index]).show();
+        }
+    });
+
+
+    
+</script>
+
+@*
+<script>
+    $(document).ready(function () {
+        $(".btn-answer").click(function () {
+            var item = $(this).data('item');
+            item.SelectedAnswer = $(this).text();
             console.log(JSON.stringify(item));
             
             $.ajax({
@@ -52,4 +122,4 @@
         });
     });
 </script>
- 
+ *@

@@ -5,16 +5,108 @@
       "PackagePath": "staticwebassets\\EnglishLearningProject.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\Applight\\.vscode\\settings.json",
+      "PackagePath": "staticwebassets\\Applight\\.vscode\\settings.json"
+    },
+    {
+      "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\Applight\\License.txt",
+      "PackagePath": "staticwebassets\\Applight\\License.txt"
+    },
+    {
+      "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\Applight\\images\\applight-wave.svg",
+      "PackagePath": "staticwebassets\\Applight\\images\\applight-wave.svg"
+    },
+    {
+      "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\Applight\\images\\appstore.png",
+      "PackagePath": "staticwebassets\\Applight\\images\\appstore.png"
+    },
+    {
+      "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\Applight\\images\\arrow-left.png",
+      "PackagePath": "staticwebassets\\Applight\\images\\arrow-left.png"
+    },
+    {
+      "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\Applight\\images\\arrow-right.png",
+      "PackagePath": "staticwebassets\\Applight\\images\\arrow-right.png"
+    },
+    {
+      "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\Applight\\images\\iphone-screen-with-shadow.png",
+      "PackagePath": "staticwebassets\\Applight\\images\\iphone-screen-with-shadow.png"
+    },
+    {
+      "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\Applight\\images\\iphone-screen.png",
+      "PackagePath": "staticwebassets\\Applight\\images\\iphone-screen.png"
+    },
+    {
+      "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\Applight\\images\\logo-black.png",
+      "PackagePath": "staticwebassets\\Applight\\images\\logo-black.png"
+    },
+    {
+      "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\Applight\\images\\logo.png",
+      "PackagePath": "staticwebassets\\Applight\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\Applight\\images\\pattern.png",
+      "PackagePath": "staticwebassets\\Applight\\images\\pattern.png"
+    },
+    {
+      "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\Applight\\images\\playstore.png",
+      "PackagePath": "staticwebassets\\Applight\\images\\playstore.png"
+    },
+    {
+      "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\Applight\\images\\user1.jpg",
+      "PackagePath": "staticwebassets\\Applight\\images\\user1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\Applight\\images\\user2.jpg",
+      "PackagePath": "staticwebassets\\Applight\\images\\user2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\Applight\\images\\user3.jpg",
+      "PackagePath": "staticwebassets\\Applight\\images\\user3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\Applight\\images\\video-bg.jpg",
+      "PackagePath": "staticwebassets\\Applight\\images\\video-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\Applight\\index.html",
+      "PackagePath": "staticwebassets\\Applight\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\css\\animate.css",
+      "PackagePath": "staticwebassets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
       "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
       "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\js\\login.js",
+      "PackagePath": "staticwebassets\\js\\login.js"
+    },
+    {
+      "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\js\\scrollIt.min.js",
+      "PackagePath": "staticwebassets\\js\\scrollIt.min.js"
+    },
+    {
       "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\js\\wow.min.js",
+      "PackagePath": "staticwebassets\\js\\wow.min.js"
     },
     {
       "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\lib\\bootstrap\\LICENSE",

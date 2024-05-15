@@ -4,19 +4,21 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    Layout = null;
 }
 @section Scripts{
     @await Html.PartialAsync("_ValidationScriptsPartial.cshtml")
 }
+<head>
+    <link href="~/css/login.css"  rel="stylesheet" asp-append-version="true" />
+</head>
 
-
-
-<h1>Üye Giriş Sayfası</h1>
 
 @if (TempData["SuccessMessage"] != null)
 {
     <div class="alert alert-info"> Üye Giriş İşlemi Başarılı </div>
 }
+@*
 
 <div asp-validation-summary="ModelOnly" class="alert-danger"></div>
 
@@ -35,3 +37,39 @@
 
     <button class="btn btn-info">Giriş Yap</button>
 </form>
+*@
+
+
+
+<!-- Background -->
+<div id="gradient-bg">
+    <div calss="gradient-container">
+        <div class="gradient1"></div>
+        <div class="gradient2"></div>
+        <div class="gradient3"></div>
+        <div class="gradient4"></div>
+        <div class="gradient5"></div>
+    </div>
+</div>
+
+<!-- Form -->
+<div id="form-container">
+    <form asp-controller="Main" asp-action="Login" method="post">
+        <div class="mb-3">
+            <label for="Email" class="form-label" asp-for="UserName"></label>
+            <input type="text" class="form-control" asp-for="UserName" placeholder="Kullanıcı Adı Giriniz">
+            <span class="text-danger" asp-validation-for="UserName"></span>
+        </div>
+
+        <div class="mb-3">
+            <label for="Email" class="form-label" asp-for="Password"></label>
+            <input type="password" class="form-control" asp-for="Password" placeholder="Şifre Giriniz">
+            <span class="text-danger" asp-validation-for="Password"></span>
+        </div>
+
+
+        <button class="button">Giriş Yap</button>
+        <div class="label msg">◆ You don't have an account? <a asp-action="Register" asp-controller="Main">Sign up</a></div>
+
+    </form>
+</div>

@@ -55,7 +55,7 @@ namespace EnglishLearningProject.Controllers
                 if (identityResult.Succeeded)
                 {
                     TempData["SuccessMessage"] = "true";
-                    return RedirectToAction("Register");
+                    return RedirectToAction("Login","Main");
                 }
 
                 foreach (IdentityError item in identityResult.Errors)
@@ -95,7 +95,7 @@ namespace EnglishLearningProject.Controllers
                 {
                     TempData["SuccessMessage"] = "true";
 
-                    return RedirectToAction("Login");
+                    return RedirectToAction("Index","Member");
                 }
 
                 if (identityResult.Succeeded==false)
