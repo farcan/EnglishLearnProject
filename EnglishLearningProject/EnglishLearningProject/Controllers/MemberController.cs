@@ -422,7 +422,14 @@ namespace EnglishLearningProject.Controllers
 
         public async Task<IActionResult> myStats()
         {
-            return View();
+
+            var stats = new UserStatsViewModel
+            {
+                trueAnswerCount = 7,
+                falseAnswerCount = 5
+            };
+
+            return View(stats);
         }
     }
 }

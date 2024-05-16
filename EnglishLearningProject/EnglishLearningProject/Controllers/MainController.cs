@@ -27,7 +27,6 @@ namespace EnglishLearningProject.Controllers
         [HttpGet]
         public IActionResult Register()
         {
-
             return View();
         }
 
@@ -49,7 +48,6 @@ namespace EnglishLearningProject.Controllers
                     Email = request.email,
                     UserName = request.userName
                 };
-
                 var identityResult = await userManager.CreateAsync(user, request.password!);
 
                 if (identityResult.Succeeded)
@@ -62,7 +60,7 @@ namespace EnglishLearningProject.Controllers
                 {
                     ModelState.AddModelError(string.Empty, item.Description);
                 }
-
+                    
                 return View();
             }
             catch (Exception)
@@ -70,8 +68,6 @@ namespace EnglishLearningProject.Controllers
 
                 throw;  
             }
-
-
             return View();
         }
 
