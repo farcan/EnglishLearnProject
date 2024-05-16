@@ -10,8 +10,6 @@ namespace EnglishLearningProject.ViewModels
         {
         }
 
-
-
         [Required(ErrorMessage = "Kullanıcı Adı Boş Bırakılamaz")]
         [Display(Name = "Kullanıcı Adı")]
         public string UserName { get; set; }
