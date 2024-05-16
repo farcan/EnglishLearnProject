@@ -418,5 +418,11 @@ namespace EnglishLearningProject.Controllers
 
             return View();
         }
+
+
+        public async Task<IActionResult> myStats()
+        {
+            return View();
+        }
     }
 }
