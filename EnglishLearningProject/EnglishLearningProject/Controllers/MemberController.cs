@@ -10,6 +10,7 @@ using Newtonsoft.Json.Serialization;
 using System.ComponentModel;
 using System.Reflection.Metadata.Ecma335;
 using System.Security.Cryptography;
+using System.Security.Cryptography.Xml;
 using System.Text.Json.Serialization;
 
 
@@ -117,8 +118,7 @@ namespace EnglishLearningProject.Controllers
                 if (words.Contains(selectedWord))
                 {
                     List<Word> newWordList = CreateRandomWord(1).Result;
-                    words.Add(newWordList[0]);
-                    
+                    words.Add(newWordList[0]);             
                 }
                 else
                 {
@@ -199,17 +199,25 @@ namespace EnglishLearningProject.Controllers
             var wordList = appDbContext.Word.Where(x => x.UserID == user.Id).ToList();
             var missingWords = wordList.Where(x => !quizlist.Any(q => q.WordID == x.WordID)).ToList();
 
-            for (int i = 0; i < count; i++)
+            if (missingWords.Count>=4)
             {
-                Random rnd = new Random();
-                int randomIndex = rnd.Next(0, missingWords.Count() - 1);
-                var quiz = new Quiz
+                for (int i = 0; i < count; i++)
                 {
-                    UserID = user.Id,
-                    WordID = missingWords[randomIndex].WordID,
-                };
-                missingWords.Remove(missingWords[randomIndex]);
-                appDbContext.Quiz.Add(quiz);
+                    Random rnd = new Random();
+                    int randomIndex = rnd.Next(0, missingWords.Count());
+                    var quiz = new Quiz
+                    {
+                        UserID = user.Id,
+                        WordID = missingWords[randomIndex].WordID,
+                    };
+                    missingWords.Remove(missingWords[randomIndex]);
+                    appDbContext.Quiz.Add(quiz);
+                }
+            }
+
+            else
+            {
+                Console.WriteLine("4 kelimeden az kelime olduğunu ve yeni kelime eklemek gerektiğini yazdır uyarısını ver");
             }
             appDbContext.SaveChanges();
 
@@ -248,37 +256,65 @@ namespace EnglishLearningProject.Controllers
         
         public async Task<IActionResult> SolveQuestion()
         {
-
-
             var quizListJSON = TempData["QuizList"] as string;
             var quizList = JsonConvert.DeserializeObject<List<Quiz>>(quizListJSON);
-
-
             var TestList = new List<TestLog>();
-
+            //Tekrar prensibi koşulları buraya gelecektir
             foreach (var item in quizList)
             {
-                var trueWordEN = appDbContext.Word.FirstOrDefault(x => x.WordID == item.WordID).wordEN;
-                var trueWordTR = appDbContext.Word.FirstOrDefault(x => x.WordID == item.WordID).wordTR;
-                var trueWordSentences = appDbContext.Word.FirstOrDefault(x => x.WordID == item.WordID).wordEN;
+                TimeSpan? time = DateTime.Now - item.replyDate;
 
-                var wrd = appDbContext.Word.FirstOrDefault(x => x.WordID == item.WordID);
-                var falseWords = await randomFalseAnswer(wrd, quizList);
-                var test = new TestLog
+                if (item.counter==0)
                 {
-                    QuizID = item.quizID,
-                    trueWord = trueWordEN,
-                    TrueWordTR = trueWordTR,
-                    trueSentences = trueWordSentences,
-                    falseWord1 = falseWords[0].wordTR,
-                    falseWord2 = falseWords[1].wordTR,
-                    falseWord3 = falseWords[2].wordTR
-                };
-                TestList.Add(test);
+                    TestList.Add(await CreateTestLogEntity(item, quizList));
+                }
+                if (item.counter==1 && time.Value.TotalDays>=1 && time.Value.TotalDays<7 )
+                {
+                   TestList.Add(await CreateTestLogEntity(item, quizList)); 
+                }
+                if (item.counter==2 && time.Value.TotalDays>=7 && time.Value.TotalDays<30)
+                {
+                    TestList.Add(await CreateTestLogEntity(item, quizList));
+                }
+                if (item.counter == 3 && time.Value.TotalDays >= 30 && time.Value.TotalDays < 90)
+                {
+                    TestList.Add(await CreateTestLogEntity(item, quizList));
+                }
+                if (item.counter == 4 && time.Value.TotalDays >= 90 && time.Value.TotalDays < 180)
+                {
+                    TestList.Add(await CreateTestLogEntity(item, quizList));
+                }
+                if (item.counter == 5 && time.Value.TotalDays >= 180)
+                {
+                    TestList.Add(await CreateTestLogEntity(item, quizList));
+                }   
+               
             }         
             return View(TestList);
         }
 
+        public async Task<TestLog> CreateTestLogEntity(Quiz quiz,List<Quiz> quizList)
+        {
+            var trueWordEN = appDbContext.Word.FirstOrDefault(x => x.WordID == quiz.WordID).wordEN;
+            var trueWordTR = appDbContext.Word.FirstOrDefault(x => x.WordID == quiz.WordID).wordTR;
+            var trueWordSentences = appDbContext.Word.FirstOrDefault(x => x.WordID == quiz.WordID).wordEN;
+
+            var wrd = appDbContext.Word.FirstOrDefault(x => x.WordID == quiz.WordID);
+            var falseWords = await randomFalseAnswer(wrd, quizList);
+            var test = new TestLog
+            {
+                QuizID = quiz.quizID,
+                trueWord = trueWordEN,
+                TrueWordTR = trueWordTR,
+                trueSentences = trueWordSentences,
+                falseWord1 = falseWords[0].wordTR,
+                falseWord2 = falseWords[1].wordTR,
+                falseWord3 = falseWords[2].wordTR
+            };
+            return test;
+
+        }
+            
 
         [HttpPost]
         public  async Task<IActionResult> SaveTestLog( [FromBody] TestLog data)
@@ -288,7 +324,7 @@ namespace EnglishLearningProject.Controllers
             TestLog editedData = data;
             Quiz quizData = appDbContext.Quiz.FirstOrDefault(x => x.quizID == editedData.QuizID);
             AppUser user = await userManager.FindByIdAsync(quizData.UserID);
-            if (data.TrueWordTR==data.SelectedAnswer)
+            if (data.TrueWordTR.Trim()==data.SelectedAnswer.Trim())
             {
                 editedData.testResult = true;
                 quizData.counter++;
@@ -330,10 +366,26 @@ namespace EnglishLearningProject.Controllers
             {
                 int newQuizCount = user.quizQuestionCount - quizList.Where(x => x.level == 0 && x.counter == 0).Count();
                 await CreateNewQuiz(newQuizCount, quizList);
+                return RedirectToAction("StartTest", "Member");
+            }
+            if (quizList.Where(x => x.level == 0).ToList().Count == 0 && quizList.ToList().Count>0 )
+            {
+                int newQuizCount = user.quizQuestionCount - quizList.Where(x => x.level == 0 && x.counter == 0).Count();
+                if (newQuizCount==0)
+                {
+                    await CreateNewQuiz(4, quizList);
+                    return RedirectToAction("StartTest", "Member");
+                }
+                else
+                {
+                    await CreateNewQuiz(newQuizCount, quizList);
+                    return RedirectToAction("StartTest", "Member");
+                }
+           
             }
 
             //Test'e giriş.
-            if (quizList.Where(x=>x.level==0).Count() > user.quizQuestionCount && user.quizQuestionCount!=0)
+            if (quizList.Where(x=>x.level==0).Count() > user.quizQuestionCount)
             {
 
                 string quizListJSON = JsonConvert.SerializeObject(quizList);
@@ -341,6 +393,7 @@ namespace EnglishLearningProject.Controllers
                 return RedirectToAction("SolveQuestion");
             }
             return View();
+
 
         }
        
