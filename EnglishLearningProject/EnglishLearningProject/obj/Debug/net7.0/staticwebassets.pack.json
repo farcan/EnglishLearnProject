@@ -97,6 +97,10 @@
       "PackagePath": "staticwebassets\\js\\login.js"
     },
     {
+      "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\js\\pdfmake.js",
+      "PackagePath": "staticwebassets\\js\\pdfmake.js"
+    },
+    {
       "Id": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\js\\scrollIt.min.js",
       "PackagePath": "staticwebassets\\js\\scrollIt.min.js"
     },

@@ -32,6 +32,10 @@
 @foreach (var item in Model)
 {
     
+    var options = new List<string> { item.TrueWordTR, item.falseWord1, item.falseWord2, item.falseWord3 };
+    var random = new Random();
+    options = options.OrderBy(x => random.Next()).ToList();
+
 
     <div class="card border-3 test-card" style="display:flex; flex-direction:column; justify-content:center; align-items:center; background-color:rgba(199, 54, 89,0.4); padding:10px">
     <img class="card-img-top" src="https://www.motionpictures.org/wp-content/uploads/2017/04/Cars358dd6f1c65330-1024x586.jpg" style="width:450px;" alt="Card image cap">
@@ -39,16 +43,19 @@
         <h5 class="card-title text-white">@item.trueWord</h5>
         <p class="card-text text-white-50">@item.trueSentences</p>
         <div class="answers d-flex">
-            <button class="btn btn-outline-light btn-answer" data-item='@Json.Serialize(item)'> @item.TrueWordTR </button>
-            <button class="btn btn-outline-light btn-answer" data-item='@Json.Serialize(item)'> @item.falseWord2 </button>
-            <button class="btn btn-outline-light btn-answer" data-item='@Json.Serialize(item)'> @item.falseWord1 </button>
-            <button class="btn btn-outline-light btn-answer" data-item='@Json.Serialize(item)'> @item.falseWord3 </button>
+            <button class="btn btn-outline-light btn-answer" data-item='@Json.Serialize(item)'> @options[0] </button>
+            <button class="btn btn-outline-light btn-answer" data-item='@Json.Serialize(item)'> @options[1] </button>
+            <button class="btn btn-outline-light btn-answer" data-item='@Json.Serialize(item)'> @options[2] </button>
+            <button class="btn btn-outline-light btn-answer" data-item='@Json.Serialize(item)'> @options[3] </button>
         </div>
 
     </div>
 </div>
 }
 
+<div id="completion-message" style="display:none; text-align:center; margin-top:20px;">
+    <h3 class="text-white">Test Bitti!</h3>
+</div>
 
 <script>
     $(document).ready(function () {
@@ -79,7 +86,9 @@
                         showQuestion(currentQuestionIndex);
                     } else {
                         console.log("Sorular bitti!");
-                        // Burada yapılacak başka bir şey varsa ekleyebilirsiniz.
+                        console.log("Tüm sorular tamamlandı!");
+                        $("#completion-message").show();
+                        $(".test-card").hide();
                     }
                 },
                 error: function (xhr, status, error) {

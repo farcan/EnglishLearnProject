@@ -128,16 +128,16 @@ namespace EnglishLearningProject.Migrations
 
             modelBuilder.Entity("EnglishLearningProject.Models.Quiz", b =>
                 {
-                    b.Property<int>("quizID")
+                    b.Property<int?>("quizID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("quizID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int?>("quizID"));
 
                     b.Property<string>("UserID")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("WordID")
+                    b.Property<int?>("WordID")
                         .HasColumnType("int");
 
                     b.Property<int>("counter")
@@ -166,7 +166,7 @@ namespace EnglishLearningProject.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TestLogID"));
 
-                    b.Property<int>("QuizID")
+                    b.Property<int?>("QuizID")
                         .HasColumnType("int");
 
                     b.Property<string>("SelectedAnswer")
@@ -212,14 +212,13 @@ namespace EnglishLearningProject.Migrations
 
             modelBuilder.Entity("EnglishLearningProject.Models.Word", b =>
                 {
-                    b.Property<int>("WordID")
+                    b.Property<int?>("WordID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("WordID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int?>("WordID"));
 
                     b.Property<string>("UserID")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<bool?>("isLearned")
@@ -375,9 +374,7 @@ namespace EnglishLearningProject.Migrations
                 {
                     b.HasOne("EnglishLearningProject.Models.AppUser", "user")
                         .WithMany("Words")
-                        .HasForeignKey("UserID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("UserID");
 
                     b.Navigation("user");
                 });

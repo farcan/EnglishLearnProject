@@ -7,7 +7,7 @@
         //Bir quiz sınıfı birden fazla testlog sınıfında bulunabilir.
 
         public int TestLogID { get; set; }  
-        public int QuizID { get; set; }
+        public int? QuizID { get; set; }
         public string trueWord { get; set; }
         public string trueSentences { get; set; }
         public string TrueWordTR { get; set; }

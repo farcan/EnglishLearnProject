@@ -1,11 +1,17 @@
 using EnglishLearningProject.Models;
 using Microsoft.EntityFrameworkCore;
 using EnglishLearningProject.Extensions;
+using DinkToPdf.Contracts;
+using DinkToPdf;
+using Microsoft.AspNetCore.Mvc.ViewEngines;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+builder.Services.AddSingleton<ICompositeViewEngine, CompositeViewEngine>();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
@@ -13,6 +19,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 });
 
 builder.Services.CustomAddIdentityWithExtensions();
+
 
 builder.Services.ConfigureApplicationCookie(opt =>
 {
@@ -50,5 +57,10 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+var rotativaPath = Path.Combine(app.Environment.WebRootPath, "Rotativa");
+var wkhtmltopdfPath = Path.Combine(app.Environment.WebRootPath, "Rotativa", "wkhtmltopdf.exe");
+
+
 
 app.Run();

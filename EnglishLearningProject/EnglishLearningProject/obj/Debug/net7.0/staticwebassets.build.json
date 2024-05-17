@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qzBaU/QXsDN6TM6rD4F07UUKfJiJKqhK3sTGNU6nU1w=",
+  "Hash": "UPx6zh3ZU6WEaFZ6It0r8fYOUxFfTjD+PNd2SigoZ9g=",
   "Source": "EnglishLearningProject",
   "BasePath": "_content/EnglishLearningProject",
   "Mode": "Default",
@@ -490,6 +490,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\login.js"
+    },
+    {
+      "Identity": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\js\\pdfmake.js",
+      "SourceId": "EnglishLearningProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\",
+      "BasePath": "_content/EnglishLearningProject",
+      "RelativePath": "js/pdfmake.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\pdfmake.js"
     },
     {
       "Identity": "C:\\Users\\fahri\\OneDrive\\Masaüstü\\EnglishProject\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\wwwroot\\js\\scrollIt.min.js",

@@ -13,9 +13,7 @@ namespace EnglishLearningProject.Models
 
         public DbSet<Word> Word { get; set; }
         public DbSet<Quiz> Quiz { get; set; }
-
         public DbSet<TestLog> TestLog { get; set; }
-
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
@@ -24,6 +22,7 @@ namespace EnglishLearningProject.Models
 
             builder.Entity<Word>().HasKey(w => w.WordID);
             builder.Entity<Quiz>().HasKey(q => q.quizID);
+            builder.Entity<TestLog>().HasKey(x => x.TestLogID);
 
             //Bir Userin birden çok kelimesi olabilir
             //Bir kelimenin bir useri olabilir.
@@ -34,12 +33,17 @@ namespace EnglishLearningProject.Models
                 .HasOne(x => x.user)
                 .WithMany(x => x.Words)
                 .HasForeignKey(x => x.UserID)
-                .IsRequired(true);
+                .IsRequired(false);
+
+
 
             builder.Entity<Quiz>()
                 .HasOne(x => x.AppUser)
                 .WithMany(x => x.quizzes)
-                .HasForeignKey(x => x.UserID);
+                .HasForeignKey(x => x.UserID)
+                .IsRequired(false);
+
+
 
             builder.Entity<Quiz>()
                 .HasOne(x => x.Word)
@@ -47,11 +51,14 @@ namespace EnglishLearningProject.Models
                 .HasForeignKey(x => x.WordID)
                 .IsRequired(false);
 
+
+
             builder.Entity<TestLog>().
                 HasOne(x => x.Quiz)
                 .WithMany(x => x.testLogs)
                 .HasForeignKey(x => x.QuizID)
                 .IsRequired(false);
+            
 
          
 

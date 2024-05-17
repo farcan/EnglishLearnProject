@@ -1,7 +1,5 @@
 ﻿
-@{
-    Layout = null;
-}
+
 
 <!DOCTYPE html>
 
@@ -31,22 +29,24 @@
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
-                <a asp-action="GetWords" asp-controller="Member" class="nav-link" aria-current="page">
-                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home" /></svg>
+                <a asp-action="GetWords" asp-controller="Member" class="nav-link text-white" aria-current="page">
                     Kelime Listem
                 </a>
             </li>
             <li>
-                <a href="#" class="nav-link text-white">
-                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2" /></svg>
+                <a  asp-action="myStats" asp-controller="Member" class="nav-link text-white">
                     İstatistiklerim
                 </a>
             </li>
             <li>
-                <a  class="nav-link text-white">
-                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table" /></svg>
+                <a asp-action="changeUserFeature" asp-controller="Member" class="nav-link text-white">
                     Kullanıcı Bilgilerim
                 </a>
+            </li>
+            <li>
+                 <a asp-action="StartTest" asp-controller="Member" class="btn btn-danger">
+                        Teste Başla
+                 </a>
             </li>
             
         </ul>

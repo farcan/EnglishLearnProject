@@ -12,6 +12,11 @@ using System.Reflection.Metadata.Ecma335;
 using System.Security.Cryptography;
 using System.Security.Cryptography.Xml;
 using System.Text.Json.Serialization;
+using DinkToPdf;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Mvc.ViewEngines;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+
 
 
 namespace EnglishLearningProject.Controllers
@@ -23,11 +28,14 @@ namespace EnglishLearningProject.Controllers
 
         private AppDbContext appDbContext;
         private readonly UserManager<AppUser> userManager;
+        private readonly ICompositeViewEngine _viewEngine;
 
-        public MemberController(AppDbContext appDbContext, UserManager<AppUser> userManager)
+
+        public MemberController(AppDbContext appDbContext, UserManager<AppUser> userManager, ICompositeViewEngine viewEngine)
         {
             this.appDbContext = appDbContext;
             this.userManager = userManager;
+            _viewEngine = viewEngine;
         }
 
         public IActionResult Index()
@@ -422,6 +430,25 @@ namespace EnglishLearningProject.Controllers
 
         public async Task<IActionResult> myStats()
         {
+            var user = await userManager.FindByNameAsync(User.Identity.Name);
+            var TestlogList = appDbContext.TestLog.Where(x => x.Quiz!.UserID == user.Id);
+            var quizzes = appDbContext.Quiz.Where(x => x.UserID == user.Id);
+
+            
+            List<WordSuccessTableViewModel> tableList = new List<WordSuccessTableViewModel>();
+
+
+            List<WordSuccessTableViewModel> data = TestlogList.GroupBy(t => t.QuizID).Select(x => new WordSuccessTableViewModel
+            {
+                WordTR = appDbContext.Quiz.FirstOrDefault(w=>w.quizID==x.Key).Word.wordTR,
+                WordEN = appDbContext.Quiz.FirstOrDefault(w=>w.quizID==x.Key).Word.wordEN,
+                TrueCount = x.Count(y => y.testResult == true),
+                FalseCount = x.Count(y => y.testResult == false)
+            }).ToList();
+
+
+            
+
 
             var stats = new UserStatsViewModel
             {
@@ -429,7 +456,98 @@ namespace EnglishLearningProject.Controllers
                 falseAnswerCount = 5
             };
 
-            return View(stats);
+
+            return View(data);
         }
+
+        public async Task<IActionResult> CreatePDF()
+        {
+            var user = await userManager.FindByNameAsync(User.Identity.Name);
+            var TestlogList = appDbContext.TestLog.Where(x => x.Quiz!.UserID == user.Id);
+            List<WordSuccessTableViewModel> data = TestlogList.GroupBy(t => t.QuizID).Select(x => new WordSuccessTableViewModel
+            {
+                WordTR = appDbContext.Quiz.FirstOrDefault(w => w.quizID == x.Key).Word.wordTR,
+                WordEN = appDbContext.Quiz.FirstOrDefault(w => w.quizID == x.Key).Word.wordEN,
+                TrueCount = x.Count(y => y.testResult == true),
+                FalseCount = x.Count(y => y.testResult == false)
+            }).ToList();
+
+
+            var pdfstring = @" <style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+</style> <table><thead>
+        <tr>
+          <th>&nbsp;</th>
+          <th>İngilizce Kelime</th>
+          <th>Türkçe Kelime</th>
+          <th>Doğru Sayısı</th>
+          <th>Yanlış Sayısı</th> 
+          <th>Başarı Oranı</th>
+        </tr>
+    </thead>
+<tbody>";
+
+            for (int i = 0; i < data.Count; i++)
+            {
+                var item = data[i];
+
+                pdfstring += $@"
+    <tr>
+        <td>{i + 1}</td>
+        <td>{item.WordEN}</td>
+        <td>{item.WordTR}</td>
+        <td>{item.TrueCount}</td>
+        <td>{item.FalseCount}</td>
+        <td>{((Convert.ToDouble(item.TrueCount)/(Convert.ToDouble(item.TrueCount)+Convert.ToDouble(item.FalseCount)))*100)}</td>
+
+    </tr>";
+            }
+            pdfstring += "</tbody> </table>";
+
+
+
+
+            var converter = new SynchronizedConverter(new PdfTools());
+
+            var doc = new HtmlToPdfDocument()
+            {
+                GlobalSettings = {
+        ColorMode = ColorMode.Color,
+        Orientation = Orientation.Landscape,
+        PaperSize = PaperKind.A4Plus,
+              },
+                Objects = {
+          new ObjectSettings() {
+             PagesCount = true,
+            HtmlContent = pdfstring,
+            WebSettings = { DefaultEncoding = "utf-8" },
+            HeaderSettings = { FontSize = 9, Right = "Page [page] of [toPage]", Line = true, Spacing = 2.812 }
+                 }
+                }
+            };
+
+
+            byte[] pdf = converter.Convert(doc);
+
+            return new FileContentResult(pdf, "application/pdf");
+
+
+        }
+
+
+
     }
 }
