@@ -16,6 +16,8 @@ using DinkToPdf;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.ViewEngines;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Azure.Core;
+using EnglishLearningProject.Extensions;
 
 
 
@@ -29,13 +31,15 @@ namespace EnglishLearningProject.Controllers
         private AppDbContext appDbContext;
         private readonly UserManager<AppUser> userManager;
         private readonly ICompositeViewEngine _viewEngine;
+        private readonly SignInManager<AppUser> signInManager;
 
 
-        public MemberController(AppDbContext appDbContext, UserManager<AppUser> userManager, ICompositeViewEngine viewEngine)
+        public MemberController(AppDbContext appDbContext, UserManager<AppUser> userManager, ICompositeViewEngine viewEngine, SignInManager<AppUser> signInManager)
         {
             this.appDbContext = appDbContext;
             this.userManager = userManager;
             _viewEngine = viewEngine;
+            this.signInManager = signInManager;
         }
 
         public IActionResult Index()
@@ -544,6 +548,47 @@ namespace EnglishLearningProject.Controllers
 
             return new FileContentResult(pdf, "application/pdf");
 
+
+        }
+
+
+
+        [HttpGet]
+        public async Task<IActionResult> ChangePassword()
+        {
+
+
+
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ChangePassword(ChangePasswordViewModel request)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View();
+
+            }
+            var currentUser = await userManager.FindByNameAsync(User.Identity!.Name!);
+            var checkOldPassword = await userManager.CheckPasswordAsync(currentUser, request.oldPassword);
+            if (!checkOldPassword)
+            {
+                ModelState.AddModelErrorList(new List<string> { "Girilen Eski Şifre Hatalı" });
+                return View();
+            }
+            var resultChangePassword = await userManager.ChangePasswordAsync(currentUser, request.oldPassword, request.newPassword);
+            if (!resultChangePassword.Succeeded)
+            {
+                ModelState.AddModelErrorList(resultChangePassword.Errors.Select(x => x.Description).ToList());
+                return View();
+            }
+
+            await userManager.UpdateSecurityStampAsync(currentUser);
+            await signInManager.SignOutAsync();
+            await signInManager.PasswordSignInAsync(currentUser, request.newPassword, true, false);
+            TempData["SuccessMessage"] = "Şifreniz Başarıyla Değiştirilmiştir.";
+            return View();
 
         }
 

@@ -26,6 +26,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/fahri/OneDrive/Masaüstü/EnglishProject/EnglishLearnProject/EnglishLearningProject/EnglishLearningProject/Views/Main/ChangeResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxDaGFuZ2VSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/fahri/OneDrive/Masaüstü/EnglishProject/EnglishLearnProject/EnglishLearningProject/EnglishLearningProject/Views/Main/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -34,8 +38,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/fahri/OneDrive/Masaüstü/EnglishProject/EnglishLearnProject/EnglishLearningProject/EnglishLearningProject/Views/Main/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/fahri/OneDrive/Masaüstü/EnglishProject/EnglishLearnProject/EnglishLearningProject/EnglishLearningProject/Views/Member/AddWord.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXEFkZFdvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fahri/OneDrive/Masaüstü/EnglishProject/EnglishLearnProject/EnglishLearningProject/EnglishLearningProject/Views/Member/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXENoYW5nZVBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/fahri/OneDrive/Masaüstü/EnglishProject/EnglishLearnProject/EnglishLearningProject/EnglishLearningProject/Views/Member/changeUserFeature.cshtml]

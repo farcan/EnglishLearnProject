@@ -1,5 +1,6 @@
 ﻿using EnglishLearningProject.Extensions;
 using EnglishLearningProject.Models;
+using EnglishLearningProject.Services;
 using EnglishLearningProject.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -12,10 +13,13 @@ namespace EnglishLearningProject.Controllers
 
         private readonly UserManager<AppUser> userManager;
         private readonly SignInManager<AppUser> signInManager;
-        public MainController(UserManager<AppUser> _userManager,SignInManager<AppUser> _signInManager) { 
+        private readonly EmailService _emailservice;
+
+        public MainController(UserManager<AppUser> _userManager,SignInManager<AppUser> _signInManager, EmailService emailService) { 
             
             userManager= _userManager;
             signInManager= _signInManager;
+            _emailservice= emailService;    
         }
 
 
@@ -112,6 +116,83 @@ namespace EnglishLearningProject.Controllers
 
             return View();
         }
-        
+
+
+        public IActionResult ResetPassword()
+        {
+
+            return View();
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> ResetPassword(ResetPasswordViewModel request)
+        {
+
+
+            var hasUser = await userManager.FindByEmailAsync(request.Email);
+            if (hasUser == null)
+            {
+                ModelState.AddModelErrorList(new List<string> { "Email Kayıtlı değildir." });
+                return View();
+            }
+
+            string passwordResetsToken = await userManager.GeneratePasswordResetTokenAsync(hasUser);
+
+            var passwordResetLink = Url.Action("ChangeResetPassword", "Main", new { userId = hasUser.Id, Token = passwordResetsToken }, HttpContext.Request.Scheme);
+
+            //EmailService Lazım.
+
+            await _emailservice.SendResetPasswordEmail(passwordResetLink, request.Email);
+
+            TempData["success"] = "Şifre Yenileme Linki Eposta Adresinize Gönderilmiştir.";
+
+            return RedirectToAction(nameof(ResetPassword));
+        }
+
+
+        public IActionResult ChangeResetPassword(string userId, string token)
+        {
+            TempData["userId"] = userId;
+            TempData["token"] = token;
+
+            if (userId == null || token == null)
+            {
+                throw new Exception("Bir Hata Meydana Geldi");
+            }
+
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ChangeResetPassword(ChangeResetPasswordViewModel request)
+        {
+            var userId = TempData["userId"].ToString();
+            var token = TempData["token"].ToString();
+            var hasUser = await userManager.FindByIdAsync(userId!);
+
+            if (hasUser == null)
+            {
+                ModelState.AddModelErrorList(new List<string> { "Kullanıcı Bulunamamıştır. " });
+                return View();
+            }
+
+            IdentityResult result = await userManager.ResetPasswordAsync(hasUser, token!, request.Password);
+
+            if (result.Succeeded)
+            {
+                TempData["SuccessMessage"] = "Şifreniz başarıyla yenilenmiştir.";
+            }
+            else
+            {
+                ModelState.AddModelErrorList(result.Errors.Select(x => x.Description).ToList());
+
+            }
+
+            return RedirectToAction("Login", "Main");
+        }
+
+
+
     }
 }

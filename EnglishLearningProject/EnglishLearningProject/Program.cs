@@ -4,6 +4,8 @@ using EnglishLearningProject.Extensions;
 using DinkToPdf.Contracts;
 using DinkToPdf;
 using Microsoft.AspNetCore.Mvc.ViewEngines;
+using EnglishLearningProject.OptionsModel;
+using EnglishLearningProject.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +21,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 });
 
 builder.Services.CustomAddIdentityWithExtensions();
+builder.Services.AddScoped<EmailService>();
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+
 
 
 builder.Services.ConfigureApplicationCookie(opt =>
@@ -29,9 +34,10 @@ builder.Services.ConfigureApplicationCookie(opt =>
     opt.LoginPath = new PathString("/Main/Login");
     opt.AccessDeniedPath = new PathString("/Main/Index");
     opt.Cookie = cookieBuilder;
+    opt.ExpireTimeSpan = TimeSpan.FromDays(50);
     opt.SlidingExpiration = true;
-    opt.ExpireTimeSpan = TimeSpan.FromMinutes(30);
 });
+
 
 
 
