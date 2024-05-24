@@ -11,4 +11,11 @@ Program kullanıcının öğrenmiş olduğu kelimelerin zamanı geldiğinde test
 
 
 
-Takım arkadaşları: Fahri Gedik-Muhammet Dirmilli- Hüsnü Selman Gümüşsoy - Hüseyin Seyit Ayağı
+Takım arkadaşları:
+Hüseyin Seyit Ayağı - 222802025	 
+
+Hüsnü Selman Gümüşsoy - 222802068 
+
+Fahri Gedik – 222804009 
+
+Muhammet Dirmilli - 222803022
