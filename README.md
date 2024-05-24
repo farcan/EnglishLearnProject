@@ -8,3 +8,7 @@ Program içinde olan tüm türkçe kelimeleri ingilizce karşılığı ve ingili
 Kullanıcı tarafından programa yeni öğrenilecek kelimenin eklenmesi sağlanmaktadır.
 Kullanıcı karşısına program içinde yer alan kelimeler rastgele bir şekilde gösterilip öğrenilmesi sağlanır. Öğrenilen kelimeler zaman çizelgesi içine alınıp belirli zaman aralıkları ile test ekranında kullanıcıya sorulur.
 Program kullanıcının öğrenmiş olduğu kelimelerin zamanı geldiğinde test ekranı üzerinde kontrolünü sağlar. Kullanıcı kelimenin karşılığını doğru yanıtlarsa kelime sonraki aşamaya aktarılır. Kullanıcı kelimenin karşılığını yanlış yanıtlarsa kelime Öğrenilecek Kelimelere eklenir.
+
+
+
+Takım arkadaşları: Fahri Gedik-Muhammet Dirmilli- Hüsnü Selman Gümüşsoy - Hüseyin Seyit Ayağı
