@@ -7,6 +7,8 @@
         public string? wordEN { get; set; }  
         public string? wordSentences { get; set; }
         public string? UserID { get; set; }
+
+        public string? wordImage { get; set; }
         public bool? isLearned { get; set; } = false;
 
         public AppUser? user { get; set; }
