@@ -16,6 +16,10 @@ namespace EnglishLearningProject.ViewModels
         [Required(ErrorMessage = "Lütfen İngilizce Cümle Giriniz")]
         [Display(Name = "İngilizce Cümle")]
         public string WordSentences { get; set; }
+
+        [Required(ErrorMessage = "Lütfen Resim URL Giriniz")]
+        [Display(Name = "İmage URL")]
+        public string WordImage { get; set; }
         public string UserID { get; set; }
     }
 }

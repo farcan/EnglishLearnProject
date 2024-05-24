@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|c:\\users\\husnu\\source\\repos\\englishlearnprojecttt2\\englishlearningproject\\englishlearningproject\\views\\member\\solvequestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|solutionrelative:englishlearningproject\\views\\member\\solvequestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|c:\\users\\husnu\\source\\repos\\englishlearnprojecttt2\\englishlearningproject\\englishlearningproject\\views\\member\\addword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|solutionrelative:englishlearningproject\\views\\member\\addword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|c:\\users\\husnu\\source\\repos\\englishlearnprojecttt2\\englishlearningproject\\englishlearningproject\\viewmodels\\addwordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|solutionrelative:englishlearningproject\\viewmodels\\addwordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|c:\\users\\husnu\\source\\repos\\englishlearnprojecttt2\\englishlearningproject\\englishlearningproject\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|solutionrelative:englishlearningproject\\controllers\\membercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|c:\\users\\husnu\\source\\repos\\englishlearnprojecttt2\\englishlearningproject\\englishlearningproject\\models\\testlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|solutionrelative:englishlearningproject\\models\\testlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|c:\\users\\husnu\\source\\repos\\englishlearnprojecttt2\\englishlearningproject\\englishlearningproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|solutionrelative:englishlearningproject\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|c:\\users\\husnu\\source\\repos\\englishlearnprojecttt2\\englishlearningproject\\englishlearningproject\\models\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|solutionrelative:englishlearningproject\\models\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|c:\\users\\husnu\\source\\repos\\englishlearnprojecttt2\\englishlearningproject\\englishlearningproject\\views\\member\\solvequestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|solutionrelative:englishlearningproject\\views\\member\\solvequestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7748DDF7-8DEF-4076-B980-CA2EB32B59BF}|EnglishLearningProject\\EnglishLearningProject.csproj|c:\\users\\husnu\\source\\repos\\englishlearnprojecttt2\\englishlearningproject\\englishlearningproject\\models\\word.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -89,6 +109,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AddWord.cshtml",
+              "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\Views\\Member\\AddWord.cshtml",
+              "RelativeDocumentMoniker": "EnglishLearningProject\\Views\\Member\\AddWord.cshtml",
+              "ToolTip": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\Views\\Member\\AddWord.cshtml",
+              "RelativeToolTip": "EnglishLearningProject\\Views\\Member\\AddWord.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAAEAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T16:39:30.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MemberController.cs",
+              "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\Controllers\\MemberController.cs",
+              "RelativeDocumentMoniker": "EnglishLearningProject\\Controllers\\MemberController.cs",
+              "ToolTip": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\Controllers\\MemberController.cs",
+              "RelativeToolTip": "EnglishLearningProject\\Controllers\\MemberController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAwDMBAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T16:35:38.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "EnglishLearningProject\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "EnglishLearningProject\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T16:35:16.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddWordViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\ViewModels\\AddWordViewModel.cs",
+              "RelativeDocumentMoniker": "EnglishLearningProject\\ViewModels\\AddWordViewModel.cs",
+              "ToolTip": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\ViewModels\\AddWordViewModel.cs",
+              "RelativeToolTip": "EnglishLearningProject\\ViewModels\\AddWordViewModel.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBUAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T16:35:04.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TestLog.cs",
+              "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\Models\\TestLog.cs",
+              "RelativeDocumentMoniker": "EnglishLearningProject\\Models\\TestLog.cs",
+              "ToolTip": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\Models\\TestLog.cs",
+              "RelativeToolTip": "EnglishLearningProject\\Models\\TestLog.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwA0AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T16:34:40.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "SolveQuestion.cshtml",
               "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\Views\\Member\\SolveQuestion.cshtml",
               "RelativeDocumentMoniker": "EnglishLearningProject\\Views\\Member\\SolveQuestion.cshtml",
@@ -101,33 +186,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Quiz.cs",
               "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\Models\\Quiz.cs",
               "RelativeDocumentMoniker": "EnglishLearningProject\\Models\\Quiz.cs",
               "ToolTip": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\Models\\Quiz.cs",
               "RelativeToolTip": "EnglishLearningProject\\Models\\Quiz.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAkwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-24T16:28:44.198Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EnglishLearningProject",
-              "DocumentMoniker": "C:\\Users\\husnu\\Source\\Repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\EnglishLearningProject.csproj",
+              "DocumentIndex": 8,
+              "Title": "EnglishLearningProject.csproj",
+              "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\EnglishLearningProject.csproj",
               "RelativeDocumentMoniker": "EnglishLearningProject\\EnglishLearningProject.csproj",
-              "ToolTip": "C:\\Users\\husnu\\Source\\Repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\EnglishLearningProject.csproj",
+              "ToolTip": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\EnglishLearningProject.csproj",
               "RelativeToolTip": "EnglishLearningProject\\EnglishLearningProject.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-24T16:27:15.995Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T16:27:15.995Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Question.cs",
               "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Models\\Question.cs",
               "RelativeDocumentMoniker": "..\\..\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Models\\Question.cs",
@@ -138,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "WordUser.cs",
               "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Models\\WordUser.cs",
               "RelativeDocumentMoniker": "..\\..\\EnglishLearnProject\\EnglishLearningProject\\EnglishLearningProject\\Models\\WordUser.cs",
@@ -150,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Word.cs",
               "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\Models\\Word.cs",
               "RelativeDocumentMoniker": "EnglishLearningProject\\Models\\Word.cs",
@@ -158,12 +242,11 @@
               "RelativeToolTip": "EnglishLearningProject\\Models\\Word.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T09:56:13.243Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-28T09:56:13.243Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "EnglishLearningProject\\Controllers\\HomeController.cs",
@@ -175,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\Views\\Main\\Login.cshtml",
               "RelativeDocumentMoniker": "EnglishLearningProject\\Views\\Main\\Login.cshtml",
@@ -187,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "MainController.cs",
               "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\Controllers\\MainController.cs",
               "RelativeDocumentMoniker": "EnglishLearningProject\\Controllers\\MainController.cs",
@@ -199,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "AppUser.cs",
               "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\Models\\AppUser.cs",
               "RelativeDocumentMoniker": "EnglishLearningProject\\Models\\AppUser.cs",
@@ -211,7 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\Models\\AppDbContext.cs",
               "RelativeDocumentMoniker": "EnglishLearningProject\\Models\\AppDbContext.cs",
@@ -223,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "AppRole.cs",
               "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\Models\\AppRole.cs",
               "RelativeDocumentMoniker": "EnglishLearningProject\\Models\\AppRole.cs",
@@ -235,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "UserLoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\ViewModels\\UserLoginViewModel.cs",
               "RelativeDocumentMoniker": "EnglishLearningProject\\ViewModels\\UserLoginViewModel.cs",
@@ -247,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "ModelStateErrorExtensions.cs",
               "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\Extensions\\ModelStateErrorExtensions.cs",
               "RelativeDocumentMoniker": "EnglishLearningProject\\Extensions\\ModelStateErrorExtensions.cs",
@@ -259,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\Views\\Main\\Register.cshtml",
               "RelativeDocumentMoniker": "EnglishLearningProject\\Views\\Main\\Register.cshtml",
@@ -271,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\Program.cs",
               "RelativeDocumentMoniker": "EnglishLearningProject\\Program.cs",
@@ -283,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "StartUpExtensions.cs",
               "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\Extensions\\StartUpExtensions.cs",
               "RelativeDocumentMoniker": "EnglishLearningProject\\Extensions\\StartUpExtensions.cs",
@@ -295,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\appsettings.json",
               "RelativeDocumentMoniker": "EnglishLearningProject\\appsettings.json",

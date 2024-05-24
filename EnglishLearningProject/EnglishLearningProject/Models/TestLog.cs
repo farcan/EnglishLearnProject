@@ -10,6 +10,8 @@
         public int? QuizID { get; set; }
         public string trueWord { get; set; }
         public string trueSentences { get; set; }
+
+        public string WordImage { get; set; }
         public string TrueWordTR { get; set; }
         public string falseWord1 { get; set; }     
         public string falseWord2 { get; set; }

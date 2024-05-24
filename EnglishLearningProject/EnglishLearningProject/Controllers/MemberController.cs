@@ -294,6 +294,8 @@ namespace EnglishLearningProject.Controllers
             var trueWordEN = appDbContext.Word.FirstOrDefault(x => x.WordID == quiz.WordID).wordEN;
             var trueWordTR = appDbContext.Word.FirstOrDefault(x => x.WordID == quiz.WordID).wordTR;
             var trueWordSentences = appDbContext.Word.FirstOrDefault(x => x.WordID == quiz.WordID).wordEN;
+            var wrdimg = appDbContext.Word.FirstOrDefault(x => x.WordID == quiz.WordID).wordImage;
+
 
             var wrd = appDbContext.Word.FirstOrDefault(x => x.WordID == quiz.WordID);
             var falseWords = await randomFalseAnswer(wrd, quizList);
@@ -303,6 +305,7 @@ namespace EnglishLearningProject.Controllers
                 trueWord = trueWordEN,
                 TrueWordTR = trueWordTR,
                 trueSentences = trueWordSentences,
+                WordImage = wrdimg,
                 falseWord1 = falseWords[0].wordTR,
                 falseWord2 = falseWords[1].wordTR,
                 falseWord3 = falseWords[2].wordTR

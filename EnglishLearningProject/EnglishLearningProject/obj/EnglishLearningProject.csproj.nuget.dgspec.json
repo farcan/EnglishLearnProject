@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\husnu\\Source\\Repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\EnglishLearningProject.csproj": {}
+    "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\EnglishLearningProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\husnu\\Source\\Repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\EnglishLearningProject.csproj": {
+    "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\EnglishLearningProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\husnu\\Source\\Repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\EnglishLearningProject.csproj",
+        "projectUniqueName": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\EnglishLearningProject.csproj",
         "projectName": "EnglishLearningProject",
-        "projectPath": "C:\\Users\\husnu\\Source\\Repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\EnglishLearningProject.csproj",
+        "projectPath": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\EnglishLearningProject.csproj",
         "packagesPath": "C:\\Users\\husnu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\husnu\\Source\\Repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\obj\\",
+        "outputPath": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\husnu\\AppData\\Roaming\\NuGet\\NuGet.Config",

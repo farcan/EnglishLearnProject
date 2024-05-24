@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EA+gcMZnoRgMk0ajIQ4nNyWwwVWT2HhOQS2uBRvEcu/avXsoxgG75hJe1nZgRyLMXbAzXsXPParTL/ptfg0vxQ==",
+  "dgSpecHash": "4IIPhFDukkZbea0cSI4K5bPmkny02WLX1UhyXgVAeOF7SS+XdznoX6f8r44owgXU/UzwMcCTFcBkZ2Gd4rnhOA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\husnu\\Source\\Repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\EnglishLearningProject.csproj",
+  "projectFilePath": "C:\\Users\\husnu\\source\\repos\\EnglishLearnProjecttt2\\EnglishLearningProject\\EnglishLearningProject\\EnglishLearningProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\husnu\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\husnu\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
